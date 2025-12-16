@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'coupons',
 
     'rosetta',
+    'parler',
 ]
 
 MIDDLEWARE = [
@@ -152,3 +153,14 @@ STRIPE_WEBHOOK_SECRET = config('STRIPE_WEBHOOK_SECRET')
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 REDIS_DB = 1
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'es'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
