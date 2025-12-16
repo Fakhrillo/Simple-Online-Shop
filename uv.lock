@@ -281,6 +281,19 @@ wheels = [
 ]
 
 [[package]]
+name = "django-localflavor"
+version = "5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "python-stdnum" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/eb/9f/4792bc2359211988f199e947f7b4cd439c6cda92de0f2d14d47d491853f7/django_localflavor-5.0.tar.gz", hash = "sha256:9ddcce5dac6a956d076f3134071c64d4c76e1c7063e8aa7730414a2a1c5ded59", size = 5000251, upload-time = "2025-05-21T08:01:16.028Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/21/10/677a837683be26517a79f3f45f3a34baca14fa31b0c3c46f8a746f93349b/django_localflavor-5.0-py3-none-any.whl", hash = "sha256:ee32749420cc4a93b18667939fe7fa0da36d71024a0d9578b40809a71489cee7", size = 2979096, upload-time = "2025-05-21T08:01:13.488Z" },
+]
+
+[[package]]
 name = "django-parler"
 version = "2.3"
 source = { registry = "https://pypi.org/simple" }
@@ -403,6 +416,7 @@ dependencies = [
     { name = "celery" },
     { name = "django" },
     { name = "django-daisy" },
+    { name = "django-localflavor" },
     { name = "django-parler" },
     { name = "django-rosetta" },
     { name = "flower" },
@@ -418,6 +432,7 @@ requires-dist = [
     { name = "celery", specifier = ">=5.5.3" },
     { name = "django", specifier = ">=5.2.7" },
     { name = "django-daisy", specifier = ">=2.0.0" },
+    { name = "django-localflavor", specifier = ">=5.0" },
     { name = "django-parler", specifier = ">=2.3" },
     { name = "django-rosetta", specifier = ">=0.10.3" },
     { name = "flower", specifier = ">=2.0.1" },
@@ -571,6 +586,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/e1/97/373dcd5844ec0ea5893e13c39a2c67e7537987ad8de3842fe078db4582fa/python-decouple-3.8.tar.gz", hash = "sha256:ba6e2657d4f376ecc46f77a3a615e058d93ba5e465c01bbe57289bfb7cce680f", size = 9612, upload-time = "2023-03-01T19:38:38.143Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a2/d4/9193206c4563ec771faf2ccf54815ca7918529fe81f6adb22ee6d0e06622/python_decouple-3.8-py3-none-any.whl", hash = "sha256:d0d45340815b25f4de59c974b855bb38d03151d81b037d9e3f463b0c9f8cbd66", size = 9947, upload-time = "2023-03-01T19:38:36.015Z" },
+]
+
+[[package]]
+name = "python-stdnum"
+version = "2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/83/60/fd8299c7d8990a7d802286ac604862387bcac3df08be7cb1c932c33ef7da/python_stdnum-2.1.tar.gz", hash = "sha256:6b01645969eb3dfd55061a0114d593753cd9e653cea9083198b7eea12644397a", size = 1238596, upload-time = "2025-05-17T13:18:43.506Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/67/04/730f619b5b8470adf0e029ee2f0a060689145ea64dec001c8bac3c3959e2/python_stdnum-2.1-py3-none-any.whl", hash = "sha256:25eabcf5f307dd4150fd8f1c03f4512a6caeb84c9f09be1448711f5803373c58", size = 1120175, upload-time = "2025-05-17T13:18:41.193Z" },
 ]
 
 [[package]]
