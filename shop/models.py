@@ -6,7 +6,7 @@ from parler.models import TranslatableModel, TranslatedFields
 class Category(TranslatableModel):
     translations = TranslatedFields(
         name = models.CharField(max_length=200),
-        slug = models.SlugField(max_length=200, unique=True),
+        slug = models.SlugField(max_length=200, unique=True, allow_unicode=True),
     )
 
     class Meta:
@@ -26,7 +26,7 @@ class Category(TranslatableModel):
 class Product(TranslatableModel):
     translations = TranslatedFields(
         name = models.CharField(max_length=200),
-        slug = models.SlugField(max_length=200),
+        slug = models.SlugField(max_length=200, allow_unicode=True),
         description = models.TextField(blank=True)
     )
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
